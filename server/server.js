@@ -21,13 +21,6 @@ app.post('/todos', (req, res) => {
 });
 
 
-/**  GET /users route 
- *   define route
- *  get all todos
- *  send to response if routes found
- *  otherwise send message no routes found
-*/
-
 app.get('/todos', (req, res) => {
 
     Todo.find().then((todos) => {
